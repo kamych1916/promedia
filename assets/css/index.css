@@ -1,0 +1,64 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import "element-ui/lib/theme-chalk/button.css";
+@import "element-ui/lib/theme-chalk/menu.css";
+@import "element-ui/lib/theme-chalk/icon.css";
+@import "element-ui/lib/theme-chalk/tooltip.css";
+@import "element-ui/lib/theme-chalk/divider.css";
+@import "element-ui/lib/theme-chalk/input.css";
+@import "element-ui/lib/theme-chalk/input-number.css";
+@import "element-ui/lib/theme-chalk/autocomplete.css";
+@import "element-ui/lib/theme-chalk/breadcrumb.css";
+@import "element-ui/lib/theme-chalk/image.css";
+@import "element-ui/lib/theme-chalk/notification.css";
+@import "element-ui/lib/theme-chalk/select.css";
+@import "element-ui/lib/theme-chalk/upload.css";
+@import "element-ui/lib/theme-chalk/pagination.css";
+@import "element-ui/lib/theme-chalk/tabs.css";
+@import "element-ui/lib/theme-chalk/popover.css";
+
+html,
+body {
+  /* background: #edf6fb !important; */
+  font-family: "Circe" !important;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
+  /* font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; */
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+/* @font-face {
+  font-family: "Formular";
+  src: local("Formular Bold"), local("Formular-Bold"),
+    url("../fonts/Formular-Bold.woff2") format("woff2"),
+    url("../fonts/Formular-Bold.woff") format("woff"),
+    url("../fonts/Formular-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Circe";
+  src: local("Circe-Regular"), local("Circe-Regular"),
+    url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-ExtraBold"), local("Montserrat-ExtraBold"),
+    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 1000;
+  font-style: normal;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

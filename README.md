@@ -1,2 +1,3 @@
-# promedia
-landing page of ProMedia company
+# puppet-show
+
+будущий сайт для кукольного театра Рыбинска
