@@ -3,7 +3,7 @@
     <div>
       <Header />
       <slide-y-down-transition :duration="700">
-        <Nuxt class="mt-100" />
+        <Nuxt />
       </slide-y-down-transition>
       <back-to-top text="Back to top" visibleoffset="0" right="30px">
         <button class="btn-backtop px-10 py-5">
@@ -17,10 +17,11 @@
 <script>
 import Header from "@/layouts/default-components/header.vue";
 import { SlideYDownTransition } from "vue2-transitions";
+
 export default {
   components: {
     SlideYDownTransition,
-    Header
-  }
+    Header,
+  },
 };
 </script>

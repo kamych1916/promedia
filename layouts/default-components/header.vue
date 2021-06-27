@@ -1,7 +1,7 @@
 <template>
-  <header id="header" class=" py-10">
+  <header id="header" class="py-10">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
         <nuxt-link
           to="/"
           class="d-flex align-items-center fs-22 text-black cursor"
@@ -12,7 +12,7 @@
         <div class="d-none d-sm-flex align-items-center">
           <nuxt-link
             to="/"
-            class="px-20 text-black text-bold text-white  cursor"
+            class="px-20 text-black text-bold text-white cursor"
           >
             Кто мы
           </nuxt-link>
@@ -25,20 +25,26 @@
           <nuxt-link to="/" class="px-20 text-black text-bold cursor">
             Контакты
           </nuxt-link>
-          <el-button type="danger" style="background: #d63231">
+          <!-- <el-button type="danger" style="background: #d63231">
             бесплатная консультация
-          </el-button>
+          </el-button> -->
         </div>
         <div class="sidebarToggle text-black" @click="eventSidebar()">
           <i class="bi bi-list fs-22"></i>
         </div>
         <div :class="[showSidebar ? 'sidebarActive' : '', 'sidebar']">
-          <div class=" p-16 text-black">
+          <div class="p-16 text-black">
             <div
               @click="eventSidebar()"
-              class="close-sidebar nav-link text-black d-flex justify-content-center"
+              class="
+                close-sidebar
+                nav-link
+                text-black
+                d-flex
+                justify-content-center
+              "
             >
-              <i class="bi bi-x-circle  pb-20"></i>
+              <i class="bi bi-x-circle pb-20"></i>
             </div>
             <div class="d-flex flex-column justify-content-start">
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
@@ -69,7 +75,7 @@
 export default {
   data() {
     return {
-      showSidebar: false
+      showSidebar: false,
     };
   },
   mounted() {
@@ -95,8 +101,8 @@ export default {
           document.body.style.overflow = "auto";
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

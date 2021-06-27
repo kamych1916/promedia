@@ -202,7 +202,7 @@
 <script>
 import { Hooper, Slide, Navigation as HooperNavigation } from "hooper";
 import "hooper/dist/hooper.css";
-import emailjs from "emailjs-com";
+// import { emailjs } from "emailjs-com";
 
 export default {
   components: {
@@ -220,6 +220,7 @@ export default {
   },
   methods: {
     sendEmail(e) {
+      let emailjs = require("emailjs-com");
       try {
         emailjs.sendForm(
           "service_yc0wsap",
