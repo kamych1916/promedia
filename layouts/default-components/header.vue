@@ -1,35 +1,51 @@
 <template>
   <header id="header" class="py-10">
     <div class="container">
-      <div class="d-flex align-items-center">
+      <div
+        class="
+          d-flex
+          align-items-center
+          justify-content-between justify-content-lg-start
+          py-10
+        "
+      >
         <nuxt-link
           to="/"
           class="d-flex align-items-center fs-22 text-black cursor"
         >
-          <img height="58" src="/images/logo.png" alt="" />
+          <img height="28" src="/images/logo.jpg" />
         </nuxt-link>
 
-        <div class="d-none d-sm-flex align-items-center">
+        <div class="d-none d-sm-block ml-40">
           <nuxt-link
             to="/"
-            class="px-20 text-black text-bold text-white cursor"
+            class="px-20 fs-12 text-bold text-black text-white cursor"
           >
-            Кто мы
+            КОМПАНИЯ
           </nuxt-link>
-          <nuxt-link to="/" class="px-20 text-black text-bold cursor">
-            Наши проекты
+          <nuxt-link to="/" class="px-20 fs-12 text-bold text-black cursor">
+            УСЛУГИ
           </nuxt-link>
-          <nuxt-link to="/" class="px-20 text-black text-bold cursor">
-            Технологии
+          <nuxt-link to="/" class="px-20 fs-12 text-bold text-black cursor">
+            ПРОЕКТЫ
           </nuxt-link>
-          <nuxt-link to="/" class="px-20 text-black text-bold cursor">
-            Контакты
+          <nuxt-link to="/" class="px-20 fs-12 text-bold text-black cursor">
+            ЖУРНАЛ
+          </nuxt-link>
+          <nuxt-link to="/" class="px-20 fs-12 text-bold text-black cursor">
+            СЕРВИСЫ
+          </nuxt-link>
+          <nuxt-link to="/" class="px-20 fs-12 text-bold text-black cursor">
+            КОНТАКТЫ
           </nuxt-link>
           <!-- <el-button type="danger" style="background: #d63231">
             бесплатная консультация
           </el-button> -->
         </div>
-        <div class="sidebarToggle text-black" @click="eventSidebar()">
+        <div
+          class="sidebarToggle text-black px-20"
+          @click.prevent="eventSidebar()"
+        >
           <i class="bi bi-list fs-22"></i>
         </div>
         <div :class="[showSidebar ? 'sidebarActive' : '', 'sidebar']">
@@ -48,19 +64,22 @@
             </div>
             <div class="d-flex flex-column justify-content-start">
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
-                Кто мы
+                КОМПАНИЯ
               </nuxt-link>
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
-                Афиша
+                УСЛУГИ
               </nuxt-link>
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
-                Новости
+                ПРОЕКТЫ
               </nuxt-link>
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
-                Спектакли
+                ЖУРНАЛ
               </nuxt-link>
               <nuxt-link to="/" class="px-20 text-black cursor py-20">
-                Контакты
+                СЕРВИСЫ
+              </nuxt-link>
+              <nuxt-link to="/" class="px-20 text-black cursor py-20">
+                КОНТАКТЫ
               </nuxt-link>
             </div>
           </div>
@@ -83,16 +102,17 @@ export default {
     HeaderTag.style.backgroundColor = "transparent";
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 0) {
-        HeaderTag.style.boxShadow = "0 0 3px #ccc";
+        // HeaderTag.style.boxShadow = "0 0 3px #ccc";
         HeaderTag.style.backgroundColor = "#fff";
       } else {
         HeaderTag.style.backgroundColor = "transparent";
-        HeaderTag.style.boxShadow = "none";
+        // HeaderTag.style.boxShadow = "none";
       }
     });
   },
   methods: {
     eventSidebar() {
+      console.log("kek");
       this.showSidebar = !this.showSidebar;
       if (window.screen.width < 1024) {
         if (this.showSidebar) {
@@ -116,7 +136,7 @@ header {
   width: 100%;
   align-items: center;
   text-align: center;
-  z-index: 2;
+  z-index: 999999;
   &:after {
     content: "";
     display: block;

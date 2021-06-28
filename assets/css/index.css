@@ -20,21 +20,24 @@
 html,
 body {
   /* background: #edf6fb !important; */
-  font-family: "Circe" !important;
+  font-family: "Prointro" !important;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
   /* font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; */
   letter-spacing: 0.1rem;
   color: #fff;
 }
-/* @font-face {
-  font-family: "Formular";
-  src: local("Formular Bold"), local("Formular-Bold"),
-    url("../fonts/Formular-Bold.woff2") format("woff2"),
-    url("../fonts/Formular-Bold.woff") format("woff"),
-    url("../fonts/Formular-Bold.ttf") format("truetype");
-  font-weight: 700;
+@font-face {
+  font-family: "Prointro";
+  src: local("Prointro"), local("Prointro"),
+    url("../fonts/Intro-Light.woff2") format("woff2");
   font-style: normal;
-} */
+}
+@font-face {
+  font-family: "Prointro-Bold";
+  src: local("Prointro"), local("Prointro"),
+    url("../fonts/Intro-Bold.woff2") format("woff2");
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Circe";
@@ -62,3 +65,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+
+
+

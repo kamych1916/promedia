@@ -1,7 +1,9 @@
 <template>
   <div>
     <div>
-      <Header />
+      <client-only>
+        <Header />
+      </client-only>
       <slide-y-down-transition :duration="700">
         <Nuxt />
       </slide-y-down-transition>

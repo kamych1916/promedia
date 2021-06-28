@@ -64,7 +64,7 @@
 }
 
 .text-bold {
-  font-weight: bolder;
+  font-family: 'Prointro-Bold' !important
 }
 
 .text-monts {
@@ -80,7 +80,7 @@
 }
 
 .text-blue {
-  color: #409eff;
+  color: #0081cc;
 }
 
 .text-red {
@@ -100,7 +100,7 @@
 .cursor {
   cursor: pointer;
   &:hover {
-    color: #d63231;
+    color: #0081cc;
     text-decoration: none;
   }
 }
