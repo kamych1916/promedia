@@ -91,8 +91,8 @@
   color: black;
 }
 
-.text-italic {
-  font-style: italic;
+.text-light {
+  font-family: 'Montserrat-Light' !important;
 }
 // end - Text
 
@@ -100,16 +100,17 @@
 .cursor {
   cursor: pointer;
   &:hover {
-    color: #0081cc;
+    color: #409eff;
     text-decoration: none;
   }
 }
 
 .link {
-  color: #409eff;
-  &:hover {
     cursor: pointer;
+  &:hover {
+    color: #409eff;
     text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }
 // end - Cursor & Link

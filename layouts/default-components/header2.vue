@@ -50,7 +50,7 @@
       </div>
       <div
         style="border: 1px solid #fff"
-        class="sidebarToggle text-white px-6"
+        class="sidebarToggle text-white pr-4 pl-6"
         @click.prevent="eventSidebar()"
       >
         <i class="bi bi-list fs-22"></i>
@@ -144,7 +144,7 @@ export default {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 0) {
         // HeaderTag.style.boxShadow = "0 0 3px #ccc";
-        HeaderTag.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+        HeaderTag.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
       } else {
         HeaderTag.style.backgroundColor = "transparent";
         // HeaderTag.style.boxShadow = "none";

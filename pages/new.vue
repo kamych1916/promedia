@@ -126,6 +126,106 @@
         >
       </p>
     </section>
+    <!-- <section class="service_section pb-100">
+      <div class="container">
+        <div
+          class="row mb-80"
+          style="border-bottom: 1px solid rgba(255, 255, 255, 0.2)"
+        >
+          <div class="col-lg-6">
+            <h3
+              class="section-title text-white аы-18"
+              style="letter-spacing: 10px"
+            >
+              наши услуги
+            </h3>
+          </div>
+          <div class="col-lg-6 text-white">
+            <p class="fs-14">
+              Айдентика и digital услуги, предназначенные для большего и малого
+              бизнеса...
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 my-10">
+            <div class="project-list text-white">
+              <div class="project">
+                <div class="project-title">
+                  <h5 class="fs-22">Разработка систем</h5>
+                  <p class="fs-12">
+                    используем совеременные решения для<br />
+                    построения — быстрой и надежной системы
+                  </p>
+                </div>
+                <div class="project-categ">01</div>
+              </div>
+              <div class="project">
+                <div class="project-title">
+                  <h5 class="fs-22">Сопровождние интернет ресурса</h5>
+                  <p class="fs-12">
+                    проводим аналитику вашего проекта, <br />далее погружаемся и
+                    ведем техническое сопровождение
+                  </p>
+                </div>
+                <div class="project-categ">02</div>
+              </div>
+              <div class="project">
+                <div class="project-title">
+                  <h5 class="fs-22">UI/UX дизайн</h5>
+                  <p class="fs-12">
+                    подчеркиваем важные детали вашего продукта,<br />
+                    после чего возводим совершенно уникальный дизайн
+                  </p>
+                </div>
+                <div class="project-categ">03</div>
+              </div>
+              <div class="project">
+                <div class="project-title">
+                  <h5 class="fs-22">Стратегический консалтинг</h5>
+                  <p class="fs-12">
+                    поможем вам определить область применения,<br />
+                    технологический стек и потенциал вашего решения.
+                  </p>
+                </div>
+                <div class="project-categ">04</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 my-10">
+            <hooper :wheelControl="false" :autoPlay="true" :playSpeed="3000">
+              <slide draggable="false">
+                <img
+                  draggable="false"
+                  width="100%"
+                  height="500"
+                  class="border-rad-10"
+                  src="https://media.giphy.com/media/j3mdQpQ9SKxFOWs9gy/giphy-downsized.gif"
+                />
+              </slide>
+              <slide draggable="false">
+                <img
+                  draggable="false"
+                  width="100%"
+                  height="500"
+                  class="border-rad-10"
+                  src="https://media.giphy.com/media/j0q2t5XWdbx6qgh0x6/giphy-downsized.gif"
+                />
+              </slide>
+              <slide draggable="false">
+                <img
+                  draggable="false"
+                  width="100%"
+                  height="500"
+                  class="border-rad-10"
+                  src="https://media.giphy.com/media/YOq9KhX8saHTRU4HWo/giphy-downsized.gif"
+                />
+              </slide>
+            </hooper>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </div>
 </template>
 

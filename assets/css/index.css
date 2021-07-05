@@ -20,7 +20,7 @@
 html,
 body {
   background: #17171A !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
   /* font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; */
   letter-spacing: 0.1rem;
@@ -56,6 +56,13 @@ body {
   font-style: normal;
 } */
 
+@font-face {
+  font-family: "Montserrat-Light";
+  src: local("Montserrat-Light"), local("Montserrat-Light"),
+    url("../fonts/Montserrat-Light.ttf") format("truetype");
+  /* font-weight: 1000; */
+  font-style: normal;
+}
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-SemiBold"), local("Montserrat-SemiBold"),

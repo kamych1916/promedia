@@ -2,7 +2,7 @@ export default {
   ssr: true,
 
   head: {
-    title: "Рыбинский Театр Кукол",
+    title: "ProMedia — Digital Агентство",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -10,11 +10,11 @@ export default {
       {
         name: "description",
         content:
-          "Рыбинский театр кукол - это настоящий дворец, где живут куклы из любимых русских народных сказок, произведений классиков и современных писателей для детей."
+          "ProMedia — комплексный digital-маркетинг по подписке. Мы обеспечиваем качественный сервис по фиксированной цене."
       },
       {
         name: "keywords",
-        content: "Рыбинский Театр Кукол"
+        content: "ProMedia"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
