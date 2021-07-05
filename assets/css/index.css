@@ -19,38 +19,48 @@
 
 html,
 body {
-  /* background: #edf6fb !important; */
-  font-family: "Prointro" !important;
+  background: #17171A !important;
+  font-family: "Montserrat", sans-serif !important;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
   /* font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; */
   letter-spacing: 0.1rem;
   color: #fff;
+  overflow-x: hidden !important;
+  cursor: none;
 }
-@font-face {
+
+/* @font-face {
+  font-family: "Calibre-Medium";
+  src: local("Calibre-Medium"), local("Calibre-Medium"),
+    url("../fonts/Calibre-Medium.woff2") format("woff2");
+  font-style: normal;
+} */
+
+/* @font-face {
   font-family: "Prointro";
   src: local("Prointro"), local("Prointro"),
     url("../fonts/Intro-Light.woff2") format("woff2");
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Prointro-Bold";
   src: local("Prointro"), local("Prointro"),
     url("../fonts/Intro-Bold.woff2") format("woff2");
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Circe";
   src: local("Circe-Regular"), local("Circe-Regular"),
     url("../fonts/Circe-Regular.ttf") format("truetype");
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat-ExtraBold"), local("Montserrat-ExtraBold"),
-    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  font-weight: 1000;
+  src: local("Montserrat-SemiBold"), local("Montserrat-SemiBold"),
+    url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  /* font-weight: 1000; */
   font-style: normal;
 }
 

@@ -154,7 +154,7 @@ header {
       transform: translateY(0) translateZ(0);
     }
     &:after {
-      background-color: #fff;
+      background-color: rgb(121, 143, 218);
     }
     transition: border-color 800ms cubic-bezier(0.19, 1, 0.22, 1) 0ms,
       opacity 800ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, transform 0ms;

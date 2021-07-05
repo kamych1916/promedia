@@ -103,8 +103,13 @@
       </div>
     </section>
     <section class="fullpage container">
+      <!-- <iframe
+        src="https://my.spline.design/characterbunny-e6b10fa516b43e7b7684ca402457490e/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe> -->
       <h1 class="text-black">Section 2</h1>
-      <p>made with <a href="https://vuejs.org/" target="_blank">Vue.js</a></p>
     </section>
     <section class="fullpage container">
       <h1 class="text-black">Section 3</h1>
@@ -140,6 +145,29 @@ export default {
       offsets: [],
       touchStartY: 0,
     };
+  },
+  destroyed() {
+    window.removeEventListener("mousewheel", this.handleMouseWheel, {
+      passive: false,
+    }); // Other browsers
+    window.removeEventListener("DOMMouseScroll", this.handleMouseWheelDOM); // Mozilla Firefox
+
+    window.removeEventListener("touchstart", this.touchStart); // mobile devices
+    window.removeEventListener("touchmove", this.touchMove); // mobile devices
+  },
+  mounted() {
+    if (window.screen.width > 1024) {
+      this.calculateSectionOffsets();
+      window.addEventListener("DOMMouseScroll", this.handleMouseWheelDOM); // Mozilla Firefox
+      window.addEventListener("mousewheel", this.handleMouseWheel, {
+        passive: false,
+      }); // Other browsers
+
+      window.addEventListener("touchstart", this.touchStart, {
+        passive: false,
+      }); // mobile devices
+      window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
+    }
   },
   methods: {
     kek() {
@@ -223,29 +251,6 @@ export default {
       return false;
     },
   },
-  mounted() {
-    if (window.screen.width > 1024) {
-      this.calculateSectionOffsets();
-      window.addEventListener("DOMMouseScroll", this.handleMouseWheelDOM); // Mozilla Firefox
-      window.addEventListener("mousewheel", this.handleMouseWheel, {
-        passive: false,
-      }); // Other browsers
-
-      window.addEventListener("touchstart", this.touchStart, {
-        passive: false,
-      }); // mobile devices
-      window.addEventListener("touchmove", this.touchMove, { passive: false }); // mobile devices
-    }
-  },
-  destroyed() {
-    window.removeEventListener("mousewheel", this.handleMouseWheel, {
-      passive: false,
-    }); // Other browsers
-    window.removeEventListener("DOMMouseScroll", this.handleMouseWheelDOM); // Mozilla Firefox
-
-    window.removeEventListener("touchstart", this.touchStart); // mobile devices
-    window.removeEventListener("touchmove", this.touchMove); // mobile devices
-  },
 };
 </script>
 
@@ -300,6 +305,73 @@ body {
     opacity: 0.8;
   }
 }
+
+.fullpage {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100%;
+}
+
+p {
+  font-size: 1em;
+}
+
+.fullpage a {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.red {
+  background-color: #ab4545;
+}
+
+section.black {
+  background-color: #000;
+}
+
+.blue {
+  background-color: #237ad4;
+}
+
+.green {
+  background-color: #68c368;
+}
+
+h1.black {
+  color: #000;
+}
+
+.sections-menu {
+  z-index: 100;
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sections-menu .menu-point {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  display: block;
+  margin: 1rem 0;
+  opacity: 0.6;
+  transition: 0.4s ease all;
+  cursor: pointer;
+}
+
+.sections-menu .menu-point.active {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1200px) {
+}
+
 #fp-nav {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
@@ -429,71 +501,5 @@ body {
   top: 50%;
   margin: -2px 0 0 -2px;
   transition: 0.1s ease-in-out;
-}
-
-.fullpage {
-  padding-top: 100px;
-  height: 100vh;
-  width: 100%;
-}
-
-p {
-  font-size: 1em;
-}
-
-.fullpage a {
-  text-decoration: none;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 5px 10px;
-  color: #fff;
-  margin-left: 5px;
-}
-
-.red {
-  background-color: #ab4545;
-}
-
-section.black {
-  background-color: #000;
-}
-
-.blue {
-  background-color: #237ad4;
-}
-
-.green {
-  background-color: #68c368;
-}
-
-h1.black {
-  color: #000;
-}
-
-.sections-menu {
-  z-index: 100;
-  position: fixed;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.sections-menu .menu-point {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  display: block;
-  margin: 1rem 0;
-  opacity: 0.6;
-  transition: 0.4s ease all;
-  cursor: pointer;
-}
-
-.sections-menu .menu-point.active {
-  opacity: 1;
-  transform: scale(1.5);
-}
-
-@media screen and (max-width: 1200px) {
 }
 </style>
