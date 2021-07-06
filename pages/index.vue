@@ -698,6 +698,61 @@
         </div>
       </div>
     </section>
+    <section class="langs_section section_space d-block h-100 pb-100 mb-100">
+      <div class="container">
+        <div class="row">
+          <div class="section_title col">
+            <h2
+              class="fs-18 text-white d-flex align-items-center"
+              style="letter-spacing: 10px"
+            >
+              свяжитесь с нами
+              <span class="line mt-4"></span>
+            </h2>
+          </div>
+        </div>
+        <div class="row text-white">
+          <div class="col-lg my-40">
+            <div class="fs-42">Мы – рядом!</div>
+            <div class="fs-18 mt-20">
+              Где&nbsp;бы вы&nbsp;ни&nbsp;были&nbsp;&mdash; мы&nbsp;всегда
+              на&nbsp;связи!<br />
+              Аудио, видео или лично &mdash; нам подходит всё!
+            </div>
+            <div class="row">
+              <div class="col-auto my-40">
+                <div class="fs-22 mb-20">Онлайн</div>
+                <div class="fs-14 text-light">
+                  <div class="my-10">
+                    <i class="bi bi-envelope-fill text-blue"></i>
+                    <span class="link"> info@promdeia.tj </span>
+                  </div>
+                  <div class="my-10">
+                    <i class="bi bi-telegram text-blue"></i>
+                    <span class="link"> Telegram: @PromeMedia </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto my-40">
+                <div class="fs-22 mb-20">Телефон</div>
+                <div class="fs-14 text-light">
+                  <i class="bi bi-telephone-outbound-fill text-blue"></i>
+                  <span class="link"> +992 (888) 88 09 09 </span>
+                </div>
+              </div>
+              <div class="col-auto my-40">
+                <div class="fs-22 mb-20">Адрес</div>
+                <div class="fs-14 text-light">
+                  <i class="bi bi-geo-alt-fill text-blue"></i>
+                  <span class="link"> ул. Мясищева, 1, офис 306 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-40"></div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
